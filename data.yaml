@@ -1,0 +1,7 @@
+train: D://1.knuckle//My First Project.v1i.yolov12//train//images//trains
+val: D://1.knuckle//My First Project.v1i.yolov12//train//images//valids
+test: D://1.knuckle//My First Project.v1i.yolov12//train//images//tests
+
+nc: 3
+names: ['0', '1', '2']
+
