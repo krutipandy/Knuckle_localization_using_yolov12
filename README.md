@@ -11,8 +11,8 @@ For knuckle localization i have deployed ultralytics model named yolov12  for th
 The sample dataset used is in the folder datas.zip mentioned in this repository
 
 # Results:
-<img width="240" height="120" alt="Image" src="https://github.com/user-attachments/assets/4f532341-a645-4967-a448-578dc0fed6ed" />
-<img width="240" height="120" alt="Image" src="https://github.com/user-attachments/assets/7aa12073-c039-4b1f-b342-78d6e3a536ac" />
-<img width="240" height="120" alt="Image" src="https://github.com/user-attachments/assets/ab99c4ae-5e2c-404a-a629-218b087f4a3a" />
+<img width="600" height="600" alt="Image" src="https://github.com/user-attachments/assets/4f532341-a645-4967-a448-578dc0fed6ed" />
+<img width="600" height="600" alt="Image" src="https://github.com/user-attachments/assets/7aa12073-c039-4b1f-b342-78d6e3a536ac" />
+<img width="600" height="600" alt="Image" src="https://github.com/user-attachments/assets/ab99c4ae-5e2c-404a-a629-218b087f4a3a" />
 
 
