@@ -8,3 +8,7 @@ One of the main purposes of living for humankind is the security and comfort one
 For knuckle localization i have deployed ultralytics model named yolov12  for the left and right. 
 
 # Sample Dataset used:
+The sample dataset used is in the folder datas.zip mentioned in this repository
+
+# Results:
+
