@@ -1,1 +1,3 @@
-This is the knuckle localization using yolov12s. It is for both right and left hand knuckle Localization. The 0 indicates minor, 1 indicates major, and 0 indicates base of the knuckle localization. Mostly, Knuckle localization is used for biometric authentication and other security purposes.
+#Overview:
+The knuckle localization is a small part of biometrics, which can help us for security purposes, like catching thieves, entry gates, and human identification.
+
