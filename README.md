@@ -1,3 +1,10 @@
 # Overview:
 The knuckle localization is a small part of biometrics, which can help us for security purposes, like catching thieves, entry gates, and human identification.
 
+# Problem Statement and Motivation:
+One of the main purposes of living for humankind is the security and comfort one feels which comes from safety measures taken by humans. So, to solve the problem of security, I have done a project in which, with the help of localization and other add-ons, we can build a biometric authentication system that can be incorporated into phones, laptops, iPads, etc. 
+
+# Methodology:
+For knuckle localization i have deployed ultralytics model named yolov12  for the left and right. 
+
+# Sample Dataset used:
