@@ -71,9 +71,9 @@ Knuckle_localization_using_yolov12/
 
 ### Training & Validation Metrics
 
-![Results]( width="400" height="600" results.png)
-![Results](train_batch0.jpg)
-![Results]
+<img src="results.png" width="600" height="400">
+<img src="train_batch0.jpg" width="600" height="400">
+<img src="valid_batch0_pred.jpg" width="600" height="400">
 
 The model demonstrates strong bounding box localization performance across training and validation sets, with consistent convergence in loss curves and high mAP scores.
 
