@@ -151,12 +151,5 @@ AI/ML Engineer | Computer Vision Enthusiast
 
 [![GitHub](https://img.shields.io/badge/GitHub-krutipandy-black?style=flat&logo=github)](https://github.com/krutipandy)
 
----
-
-## 📄 License
-
-This project is open-source and available under the [MIT License](LICENSE).
-
----
 
 <p align="center">⭐ If you found this project useful, please consider giving it a star!</p>
