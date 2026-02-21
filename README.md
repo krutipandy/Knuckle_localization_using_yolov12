@@ -1,28 +1,162 @@
-# Overview:
-The knuckle localization is a small part of biometrics, which can help us for security purposes, like catching thieves, entry gates, and human identification.
+<h1 align="center">🖐️ Knuckle Localization using YOLOv12</h1>
 
-# Problem Statement and Motivation:
-One of the main purposes of living for humankind is the security and comfort one feels which comes from safety measures taken by humans. So, to solve the problem of security, I have done a project in which, with the help of localization and other add-ons, we can build a biometric authentication system that can be incorporated into phones, laptops, iPads, etc. 
+<p align="center">
+  <img src="https://img.shields.io/badge/Model-YOLOv12-blue?style=for-the-badge&logo=python" />
+  <img src="https://img.shields.io/badge/Task-Object%20Detection-green?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Domain-Biometrics%20%7C%20Computer%20Vision-orange?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Framework-Ultralytics-red?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Language-Python-yellow?style=for-the-badge&logo=python" />
+</p>
 
-# Methodology:
-For knuckle localization i have deployed ultralytics model named yolov12  for the left and right. 
+<p align="center">
+  A deep learning-based <strong>knuckle localization system</strong> using YOLOv12 for real-time hand biometric detection — applicable in authentication systems, access control, and identity verification.
+</p>
 
-# Sample Dataset used:
-The sample dataset used is in the folder datas.zip mentioned in this repository
+---
 
-# Results:
-Graphs:
+## 📌 Project Overview
 
-<img width="600" height="600" alt="Image" src="https://github.com/user-attachments/assets/4f532341-a645-4967-a448-578dc0fed6ed" />
+Knuckle patterns are a reliable biometric trait used for **human identification and authentication**. This project implements an end-to-end object detection pipeline using **Ultralytics YOLOv12** to precisely localize knuckles on both left and right hands.
 
-Train: 
+The system is designed to serve as the foundational detection module in larger biometric pipelines — such as smartphone unlock systems, entry-gate authentication, or forensic identification.
 
-<img width="600" height="600" alt="Image" src="https://github.com/user-attachments/assets/7aa12073-c039-4b1f-b342-78d6e3a536ac" />
+---
 
-Valid:
+## 🎯 Problem Statement
 
-<img width="600" height="600" alt="Image" src="https://github.com/user-attachments/assets/ab99c4ae-5e2c-404a-a629-218b087f4a3a" />
+Security is a fundamental human need. Traditional biometric systems (fingerprints, face recognition) have well-known vulnerabilities. **Knuckle-based biometrics** offer a less invasive, highly unique alternative that can be integrated into everyday devices like phones, laptops, and tablets.
 
-# Future work:
-Merging object detection with segmentation for the best outcome in biometrics for hands.
+This project addresses the first and most critical step: **accurately localizing knuckle regions** in real-time from hand images using modern object detection techniques.
 
+---
+
+## 🧠 Key Features
+
+- ✅ Real-time knuckle detection using **YOLOv12 (Ultralytics)**
+- ✅ Handles both **left and right hands**
+- ✅ Custom dataset with labeled knuckle bounding boxes
+- ✅ Training, validation, and inference pipelines included
+- ✅ Designed as a modular component for full biometric systems
+- ✅ Notebook-ready — runs on **Google Colab / Jupyter**
+
+---
+
+## 🛠️ Tech Stack
+
+| Tool / Library | Purpose |
+|---|---|
+| Python 3.x | Core programming language |
+| Ultralytics YOLOv12 | Object detection model |
+| OpenCV | Image processing |
+| PyTorch | Deep learning backend |
+| Jupyter Notebook | Development & experimentation |
+| Roboflow / Custom Dataset | Data labeling and management |
+
+---
+
+## 📁 Repository Structure
+```
+Knuckle_localization_using_yolov12/
+│
+├── Knuckle_localization.ipynb   # Main training & inference notebook
+├── data.yaml                    # Dataset config (classes, paths)
+├── datas.zip                    # Sample labeled dataset
+├── results.png                  # Training performance metrics
+└── README.md
+```
+
+---
+
+## 📊 Results
+
+### Training & Validation Metrics
+
+![Results](results.png)
+
+The model demonstrates strong bounding box localization performance across training and validation sets, with consistent convergence in loss curves and high mAP scores.
+
+---
+
+## 🚀 Getting Started
+
+### 1. Clone the Repository
+```bash
+git clone https://github.com/krutipandy/Knuckle_localization_using_yolov12.git
+cd Knuckle_localization_using_yolov12
+```
+
+### 2. Install Dependencies
+```bash
+pip install ultralytics opencv-python
+```
+
+### 3. Extract Dataset
+```bash
+unzip datas.zip
+```
+
+### 4. Run the Notebook
+Open `Knuckle_localization.ipynb` in Jupyter or Google Colab and run all cells.
+
+### 5. Train the Model
+```python
+from ultralytics import YOLO
+
+model = YOLO("yolov12n.pt")
+model.train(data="data.yaml", epochs=50, imgsz=640)
+```
+
+### 6. Run Inference
+```python
+results = model("path/to/hand_image.jpg")
+results[0].show()
+```
+
+---
+
+## 📂 Dataset
+
+The custom dataset includes annotated hand images with bounding boxes around individual knuckle joints for both left and right hands.
+
+- **Format:** YOLO format (`.txt` labels)
+- **Classes:** Knuckle regions (left hand, right hand)
+- **Source:** Custom collected and labeled dataset (included as `datas.zip`)
+
+---
+
+## 🔭 Future Work
+
+- [ ] Integrate **instance segmentation** (YOLOv12-seg) for pixel-level knuckle masks
+- [ ] Build a full **biometric authentication pipeline** using knuckle embeddings
+- [ ] Deploy as a **real-time web application** using FastAPI + Streamlit
+- [ ] Extend to **3D knuckle reconstruction** using depth cameras
+- [ ] Benchmark against other biometric modalities (fingerprint, iris)
+
+---
+
+## 💡 Applications
+
+- 🔐 Device unlock & user authentication
+- 🏢 Smart entry-gate access control
+- 🕵️ Forensic human identification
+- 🏥 Contactless biometric systems (hospital/healthcare)
+- 📱 Mobile biometric integration
+
+---
+
+## 👩‍💻 Author
+
+**Kruti Pandya**  
+AI/ML Engineer | Computer Vision Enthusiast  
+
+[![GitHub](https://img.shields.io/badge/GitHub-krutipandy-black?style=flat&logo=github)](https://github.com/krutipandy)
+
+---
+
+## 📄 License
+
+This project is open-source and available under the [MIT License](LICENSE).
+
+---
+
+<p align="center">⭐ If you found this project useful, please consider giving it a star!</p>
