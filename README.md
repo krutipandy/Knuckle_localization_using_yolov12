@@ -61,9 +61,9 @@ Knuckle_localization_using_yolov12/
 ├── Knuckle_localization.ipynb   # Main training & inference notebook
 ├── data.yaml                    # Dataset config (classes, paths)
 ├── datas.zip                    # Sample labeled dataset
-├── results.png
-├── train_batch0.jpg
-├── val_batch0_pred.jpg                 # Training performance metrics
+├── results.png                  # Training performance metrics
+├── train_batch0.jpg             # Training result
+├── val_batch0_pred.jpg          # Model prediction result
 └── README.md
 ```
 
